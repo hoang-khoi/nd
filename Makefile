@@ -1,5 +1,5 @@
 CFLAGS=-c -ansi -pedantic -Wall -Werror -Wfatal-errors -O3
-TARGETS=entry.o byte_array.o meaning_array.o meaning.o node.o
+TARGETS=cstream.o value.o node.o
 
 all: $(TARGETS)
 

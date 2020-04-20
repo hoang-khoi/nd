@@ -7,7 +7,7 @@ NODE *new_node() {
     NODE *node;
 
     node = malloc(sizeof(NODE));
-    node->entry = NULL;
+    node->value = NULL;
     memset(node->edges, 0, sizeof(NODE*));
 
     return node;
@@ -23,6 +23,6 @@ void del_root_node(NODE *root) {
         del_root_node(root->edges[i]);
 
 
-    del_entry(root->entry);
+    del_value(root->value);
     free(root);
 }
